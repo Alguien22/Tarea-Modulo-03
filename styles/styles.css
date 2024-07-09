@@ -2,7 +2,7 @@
     height: 98vh;
     display: grid;
     grid-template-columns: 15px 120px 1fr;
-    grid-template-rows: 80px 1fr 25px;
+    grid-template-rows: 160px 1fr 25px;
     gap: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -22,8 +22,7 @@
 }
 
 .titulo {
-    text-align: center;
-    border-radius: 25px;
+    height: 160px;
     animation: move 5s infinite linear;
     color: #fff;
     font-size: xx-large;
