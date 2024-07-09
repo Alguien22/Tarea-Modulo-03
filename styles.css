@@ -1,0 +1,116 @@
+.tabla {
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 15px 120px 1fr;
+    grid-template-rows: 80px 1fr 25px;
+    gap: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.encabezado {
+    border-radius: 15px;
+    background-color: rgb(147, 187, 233);
+    text-align: center;
+    font-size: 10px;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    border-radius: 25px;
+    animation: move 5s infinite linear;
+    color: #fff;
+    font-size: xx-large;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-73vw, 0);
+    }
+
+    100% {
+        transform: translate(73vw, 0);
+    }
+}
+
+.navegador {
+    border-radius: 15px;
+    background-color: rgb(223, 127, 3);
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 5px;
+
+    &:hover {
+        width: 150px;
+        z-index: 1;
+    }
+
+    &:hover ul {
+        display: block;
+    }
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding-inline-start: 0;
+    display: none;
+}
+
+li {
+    background: rgb(170, 170, 170);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 3px solid #000;
+}
+
+.contenido {
+    border-radius: 15px;
+    background-color: rgb(170, 170, 170);
+    grid-column: 2/4;
+    grid-row: 2/3;
+    padding: 5px;
+}
+
+.trabajos {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+form {
+    padding: 15px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-left: 3px solid #000;
+}
+
+.formInput {
+    padding: 5px;
+    margin: 2px;
+}
+
+.pie {
+    display: flex;
+    border-radius: 15px;
+    background-color: rgb(4, 189, 14);
+    grid-column: 1/4;
+    grid-row: 3/4;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+.redes {
+    width: 15px;
+}
